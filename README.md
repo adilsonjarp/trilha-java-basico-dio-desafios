@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-// trilha-java-basicimport java.util.Scanner;
+ trilha-java-basicimport java.util.Scanner;
 
 public class Contador {
     public static void main(String[] args) {
