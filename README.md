@@ -1,4 +1,4 @@
- trilha-java-basicimport java.util.Scanner;
+import java.util.Scanner;
 
 public class Contador {
     public static void main(String[] args) {
@@ -8,15 +8,6 @@ public class Contador {
         System.out.println("Digite o segundo parâmetro");
         int parametroDois = terminal.nextInt();
 
-
-		try {
-			//chamando o método contendo a lógica de contagem
-			contar(parametroUm, parametroDois);
-		
-		}catch (? exception) {
-			//imprimir a mensagem: O segundo parâmetro deve ser maior que o primeiro
-		}
-		
         try {
             // Chamando o método contendo a lógica de contagem
             contar(parametroUm, parametroDois);
@@ -38,4 +29,15 @@ public class Contador {
             System.out.println("Imprimindo o número " + i);
         }
     }
-}o-dio-desafios
+}
+Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+Agora, precisamos criar a classe ParametrosInvalidosException. Você pode criar essa classe no mesmo pacote do Contador.java. Ela deve ser uma exceção personalizada para lidar com a situação em que o segundo parâmetro é menor ou igual ao primeiro.
+
+Java
+
+public class ParametrosInvalidosException extends Exception {
+    public ParametrosInvalidosException(String message) {
+        super(message);
+    }
+}
+     
